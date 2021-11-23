@@ -1,0 +1,406 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "departments",
+        "patterns": [
+          "Departments", 
+          "List of Departments", 
+          "Branches", 
+          "List of Branches",
+          "what branches are available in GRIET?",
+          "List of all the branches available in college",
+          "what departments are available in GRIET?",
+          "List of all the departments available in college"
+        ],
+        "responses": [
+          "List of Departments in GRIET are: \n CSE \n IT \n ECE \n ME \n EEE \n CE \n H&S"          
+          ]
+      },
+      {
+        "tag": "scholarship",
+        "patterns": [
+          "scholarship", 
+          "How to apply for sholarship", 
+          "Scholarship Eligibility", 
+          "How to apply for scholarship?",
+          "Scholarship rank cutoff",
+          "Scholarship payment procedure"
+        ],
+        "responses": [
+          "Refer to http://www.griet.ac.in/scholarships.php for more details", 
+          "This page will provide more information http://www.griet.ac.in/scholarships.php"
+        ]
+      },
+      {
+        "tag": "HOD-IT",
+        "patterns": [
+          "Who is the Head of Department of IT", 
+          "Who is the HOD of IT",
+          "Who is the Head of Department of IT branch",
+          "Who is the HOD of IT branch",
+          "Who is the Head of Department of Information Technology", 
+          "Who is the HOD of Information Technology",
+          "Who is the Head of Department of Information Technology branch", 
+          "Who is the HOD of Information Technology branch",
+          "IT HOD", 
+          "HOD of IT",
+          "HOD of Information Technology"
+        ],
+        "responses": ["Dr. K Prasanna Lakshmi HOD, IT", 
+          "Dr. K Prasanna Lakshmi heads IT"
+        ]
+      },
+      {
+        "tag": "HOD-ECE",
+        "patterns": [
+          "Who is the Head of Department of ECE", 
+          "Who is the HOD of ECE",
+          "Who is the Head of Department of ECE branch",
+          "Who is the HOD of ECE branch",
+          "Who is the Head of Department of Electronics and Communications Engineering",
+          "Who is the HOD of Electronics and Communications Engineering",
+          "Who is the Head of Department of Electronics and Communications Engineering branch",
+          "Who is the HOD of Electronics and Communications Engineering branch", 
+          "ECE HOD", 
+          "HOD of ECE",
+          "HOD of Electronics and Communications Engineering"
+        ],
+        "responses": ["Dr. N Swetha HOD, ECE", 
+          "Dr. N Swetha heads ECE"
+        ]
+      },
+      {
+        "tag": "HOD-ME",
+        "patterns": [
+          "Who is the Head of Department of ME", 
+          "Who is the HOD of ME",
+          "Who is the Head of Department of ME branch",
+          "Who is the HOD of ME branch",
+          "Who is the Head of Department of Mechanical Engineering", 
+          "Who is the HOD of Mechanical Engineering",
+          "Who is the Head of Department of Mechanical Engineering branch", 
+          "Who is the HOD of Mechanical Engineering branch", 
+          "ME HOD", 
+          "Mechanical HOD",
+          "HOD of ME",
+          "HOD of Mechanical Engineering"
+        ],
+        "responses": ["Dr. N. Sateesh HOD, ME", 
+          "Dr. N. Sateesh heads ME"
+        ]
+      },
+      {
+        "tag": "HOD-CE",
+        "patterns": [
+          "Who is the Head of Department of CE", 
+          "Who is the HOD of CE",
+          "Who is the Head of Department of CE branch",
+          "Who is the HOD of CE branch",
+          "Who is the Head of Department of Civil Engineering", 
+          "Who is the HOD of Civil Engineering",
+          "Who is the Head of Department of Civil Engineering branch", 
+          "Who is the HOD of Civil Engineering branch", 
+          "CE HOD", 
+          "Civil HOD",
+          "HOD of CE",
+          "HOD of Civil Engineering"
+        ],
+        "responses": ["Dr. V Mallikarjuna Reddy HOD, CE", 
+          "Dr. V Mallikarjuna Reddy heads CE"
+        ]
+      },
+      {
+        "tag": "HOD-EEE",
+        "patterns": [
+          "Who is the Head of Department of EEE", 
+          "Who is the HOD of EEE",
+          "Who is the Head of Department of EEE branch",
+          "Who is the HOD of EEE branch",
+          "Who is the Head of Department of Electrical and Electronics Engineering",
+          "Who is the HOD of Electrical and Electronics Engineering", 
+          "Who is the Head of Department of Electrical and Electronics Engineering branch",
+          "Who is the HOD of Electrical and Electronics Engineering branch",
+          "EEE HOD", 
+          "Electrical HOD",
+          "HOD of EEE",
+          "HOD of Electrical and Electronics Engineering"
+        ],
+        "responses": ["Dr J Sridevi HOD, EEE", 
+          "Dr J Sridevi heads EEE"
+        ]
+      },
+      {
+        "tag": "HOD-CSE",
+        "patterns": [
+          "Who is the Head of Department of CSE", 
+          "Who is the HOD of CSE",
+          "Who is the Head of Department of CSE branch",
+          "Who is the HOD of CSE branch",
+          "Who is the Head of Department of Computer Science Engineering",
+          "Who is the HOD of Computer Science Engineering",
+          "Who is the Head of Department of Computer Science", 
+          "Who is the HOD of Computer Science",
+          "Who is the Head of Department of Computer Science Engineering branch", 
+          "Who is the HOD of Computer Science Engineering branch", 
+          "CSE HOD", 
+          "CS HOD",
+          "HOD of CSE",
+          "HOD of Computer Science Engineering"
+        ],
+        "responses": ["Dr.K.Madhavi HOD, CSE", 
+          "Dr.K.Madhavi heads CSE"
+        ]
+      },
+      {
+        "tag": "HOD-H&S",
+        "patterns": [
+          "Who is the Head of Department of H&S",
+          "Who is the HOD of H&S",
+          "Who is the Head of Department of HS",
+          "Who is the HOD of HS",
+          "Who is the Head of Department of H&S branch",
+          "Who is the HOD of H&S branch",
+          "Who is the Head of Department of Humanities and Sciences",
+          "Who is the HOD of Humanities and Sciences",
+          "Who is the Head of Department of Humanities and Sciences branch", 
+          "Who is the HOD of Humanities and Sciences branch", 
+          "H&S HOD", 
+          "HS HOD",
+          "HOD of H&S",
+          "HOD of Humanities and Sciences"
+        ],
+        "responses": ["Dr. B.Srinivasa Rao HOD, H&S", 
+          "Dr. B.Srinivasa Rao heads H&S"
+        ]
+      },
+
+
+      {
+        "tag": "alumni",
+        "patterns": [
+          "alumni affairs",
+          "alumni Meet",
+          "When is the alumni meet?",
+          "How to participate in Alumni Meet?",
+          "Alumni meet registration price?"
+        ],
+        "responses": [
+          "All information Regarding Alumni Affairs can be found at http://www.griet.ac.in/alumni.php",
+          "please refer to http://www.griet.ac.in/alumni.php for all the necessary information"
+        ]
+      },
+      {
+        "tag": "Journals",
+        "patterns": [
+          "What are the Journal Publications in GRIET", 
+          "Griet journal publications", 
+          "Journals in college", 
+          "College Journal publications"
+        ],
+        "responses": [
+          "Some of the publications are: \n International Journal of Advanced Materials Manufacturing and Characterization \n Management Today \n International Journal of Advanced Computing \n etc, find out more at http://www.griet.ac.in/journals.php" 
+        ]
+      },
+      {
+        "tag": "results",
+        "patterns": [
+          "results", 
+          "1.1 results", 
+          "1.2 results", 
+          "2.1 results", 
+          "2.2 results", 
+          "3.1 results", 
+          "3.2 results", 
+          "4.1 results", 
+          "4.2 results", 
+          "1,1 results", 
+          "1,2 results", 
+          "2,1 results", 
+          "2,2 results", 
+          "3,1 results", 
+          "3,2 results", 
+          "4,1 results", 
+          "4,2 results", 
+          "supply results",
+          "supplimentary results", 
+          "1st sem results", 
+          "2nd sem results", 
+          "3rd sem results", 
+          "4th sem results", 
+          "5th sem results",  
+          "6th sem results", 
+          "7th sem results", 
+          "8th sem results", 
+          "exam results"],
+        "responses": [
+          "please check for your results from http://gradesresults.griet.in/", 
+          "Refer to http://gradesresults.griet.in/ for results"
+          ]
+      },
+      {
+        "tag": "package",
+        "patterns": [
+          "Highest Placement Package?", 
+          "Highest placement salary?", 
+          "Highest salary", 
+          "Highest package",
+          "Average Placement Package?", 
+          "Average placement salary?", 
+          "Average salary", 
+          "Average package"
+        ],
+        "responses": [
+          "\n For the A.Y 2020 Higest Package: 40L CTC, \n Average Package: 4L CTC \n for more info refer to placement cell"
+        ]
+      },
+      {
+        "tag": "exams",
+        "patterns": [
+          "Where can I find the exam timetable?",
+          "Exam TimeTable?",
+          "Exam Seating?",
+          "Examhall Seating?",
+          "Exam center?",
+          "Exam Timing?"
+        ],
+        "responses": [
+          "For Information regarding Examinations, search on www.griet.ac.in/exambranch"          
+        ]
+      },
+      {
+        "tag": "holidays",
+        "patterns": [
+          "List of Holidays", 
+          "Is tomorrow a holiday?", 
+          "Holidays this month", 
+          "How many holidays are available in this year?",
+          "How many holidays this year?",
+          "How many holidays are available this month?"
+        ],
+        "responses": [
+          "Please refer to http://www.griet.ac.in/academic_calendar.php for more details",
+          "Refer to http://www.griet.ac.in/academic_calendar.php for list of holidays" 
+        ]
+      },
+      {
+        "tag": "StudentBody",
+        "patterns": [
+          "What student bodies are there in college?",
+          "List of Student bodies in college",
+          "List of Student clubs in college",
+          "What student clubs are there in college?",
+          "What are the various Student Bodies in college?",
+          "What are the various Student clubs in college?",
+          "What are the various Student clubs?",
+          "What are the various Student bodies?",
+          "What are the various student councils?",
+          "What are the various Student councils in college?",
+          "What student councils are there in college?",
+          "What student councils are there in college?"
+
+        ],
+        "responses": [
+          "List of Student Bodies in College are: \n Advanced Academic Cell \n Entrepreneurship Cell \n IEEE \n ISTE \n Spirals \n Sports Club \n Rhythms \n Robotics Club \n Street Cause \n NSS \n Green Campus \n FSW \n Gaming Club \n TedX"  
+        ]
+      },
+      {
+        "tag": "Ranking",
+        "patterns": [
+          "College Ranking",
+          "GRIET Ranking",
+          "NIRF ranking",
+          "GRIET NIRF ranking",
+          "college NIRF ranking"
+        ],
+        "responses": [
+          "GRIET is ranked 165th based on NIRF ranking", 
+          "NIRF ranking: GRIET 165!"
+        ]
+      },
+      {
+        "tag": "Rating",
+        "patterns": [
+          "College Rating",
+          "GRIET Rating",
+          "NAAC Rating",
+          "GRIET NAAC Rating",
+          "college NAAC Rating"
+        ],
+        "responses": [
+          "GRIET NAAC rating is AAA+", 
+          "NAAC Rating: GRIET AAA+ !"
+        ]
+      },
+      {
+        "tag": "fee-payment",
+        "patterns": [
+          "Are you cash only?",
+          "How to pay college fee?",
+          "How can I pay the fee?",
+          "fee recipt?",
+          "last day to pay fee?",
+          "Fee Structure?"
+        ],
+        "responses": [
+          "Fee payments can be done via www.payfee.griet.com"  
+        ]
+      },
+      {
+        "tag": "placements",
+        "patterns": [
+          "When does placements start",
+          "What is the average package in GRIET",
+          "When is the highest package?",
+          "placements?"
+        ],
+        "responses": [
+          "Refer to placements cell for this information",
+          "www.placements.co.in :)"
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?",
+          "funny"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      }
+    ]
+  }
